@@ -6,7 +6,8 @@
 .content {
   margin-left: 250px; /* match the sidebar width */
   padding: 30px;
-  background-color: #caf0f8;
+  /* background-color: #caf0f8; */
+  background-color: #ffffff;
   color: #03045e;
   min-height: 100vh;
 }

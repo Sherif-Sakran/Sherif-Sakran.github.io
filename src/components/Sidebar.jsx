@@ -6,11 +6,11 @@ import photo from '../assets/images/Sherif.jpg'
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h1>Sherif Sakran</h1>
+      {/* <h1 className="name">Sherif Sakran</h1> */}
       <img src={photo} alt="Cheefrul" className="profile-pic"/>
       <nav className="nav-links">
         <NavLink to="/" >
-            Home
+            About
         </NavLink>
         <NavLink to="/resume" >
             Resume

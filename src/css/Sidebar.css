@@ -10,16 +10,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
   overflow-y: auto; /* In case sidebar content exceeds viewport */
 }
 
-h1 {
+.name {
   font-size: 2em;
   margin-bottom: 20px;
+  margin-top: 50px;
   color: #ffffff; /* Light blue color for the heading */
 }
 
 .profile-pic {
+  margin-top:50px;
   width: 150px !important; /* or any value you want */
   /* height: 150px; */
   border-radius: 50%;
