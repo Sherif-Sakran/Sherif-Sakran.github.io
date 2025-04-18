@@ -1,14 +1,24 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import '../css/Projects.css'
+import { projects } from '../assets/data/projectsData'
 
 const Projects = () => {
-  
-  const projects = [{id: 1, name: 'Project 1', description: 'Description 1'}, {id: 2, name: 'Project 2', description: 'Description 2'}, {id: 3, name: 'Project 3', description: 'Description 3'}, {id: 4, name: 'Project 4', description: 'Description 4'}, ]
   return (
-    <div>
-      <h1>Projects</h1>
-      { projects.map(project => (
-        <h2> {project.name}</h2>
-      )) }
+    <div className="projects-container">
+      <h1 className="projects-title">Projects</h1>
+      <div className="projects-grid">
+        {projects.map(project => (
+          <Link to={`/projects/${project.id}`} key={project.id} className="project-card">
+            <div className="image-container">
+              <img src="../../public/screenshots/Screenshot.png" alt={project.title} className="project-image" />
+              <div className="project-type-overlay">{project.type}</div>
+            </div>
+            <h2 className="project-title">{project.title}</h2>
+            <p className="project-description">{project.description}</p>
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }
