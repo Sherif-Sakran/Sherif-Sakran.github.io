@@ -1,11 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import '../css/Sidebar.css'
+import photo from '../assets/images/Sherif.jpg'
 
 const Sidebar = () => {
   return (
-    <div>
-      <h1>This is the sidebar component</h1>
-      <nav>
+    <div className="sidebar">
+      <h1>Sherif Sakran</h1>
+      <img src={photo} alt="Cheefrul" className="profile-pic"/>
+      <nav className="nav-links">
         <NavLink to="/" >
             Home
         </NavLink>

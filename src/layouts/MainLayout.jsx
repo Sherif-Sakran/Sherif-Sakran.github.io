@@ -4,10 +4,12 @@ import Sidebar from '../components/sidebar'
 
 const MainLayout = () => {
   return (
-    <>
+    <div className="main-layout">
         <Sidebar />
-        <Outlet />
-    </>
+        <div className="content">
+          <Outlet />
+        </div>
+    </ div>
   )
 }
 

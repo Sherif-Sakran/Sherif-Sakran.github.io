@@ -1,0 +1,65 @@
+.sidebar {
+  position: fixed; /* This makes it stay in place */
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #023e8a;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; /* In case sidebar content exceeds viewport */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #90e0ef; /* Light blue color for the heading */
+}
+
+.profile-pic {
+  width: 150px !important; /* or any value you want */
+  /* height: 150px; */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid transparent;
+  background-image: linear-gradient(#023e8a, #023e8a), 
+                    linear-gradient(135deg, #0077b6, #00b4d8, #90e0ef);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 119, 182, 0.4);
+}
+
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 180, 216, 0.6);
+  cursor: pointer;
+}
+
+
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: #90e0ef;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #00b4d8;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  color: #48cae4;
+}
+
