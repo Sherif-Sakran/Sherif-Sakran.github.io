@@ -16,7 +16,7 @@ const About = () => {
       <ul className="interests">
         <li>🧠 Natural Language Processing</li>
         <li>🧑‍💻 Human-Computer Interaction</li>
-        <li>💬 Conversational Interfaces</li>
+        {/* <li>💬 Conversational Interfaces</li> */}
       </ul>
 
       <h2 className="section-heading">More About Me</h2>
@@ -28,7 +28,7 @@ const About = () => {
       <div className="contact-section">
         <h2 className="section-heading">Get in Touch</h2>
         <p>Connect on <a href="https://www.linkedin.com/in/sherif-sakran/" target="_blank" rel="noreferrer">LinkedIn</a></p>
-        <p>Contact me at via <a href="mailto:sherifsakraan@gmail.com">Email</a></p>
+        <p>Contact me via <a href="mailto:sherifsakraan@gmail.com">Email</a></p>
       </div>
     </div>
   )
