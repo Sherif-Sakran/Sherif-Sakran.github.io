@@ -1,8 +1,11 @@
 import React from 'react'
-import '../css/Resume.css'
 import ResumeBody from '../components/ResumeBody'
+import '../css/Resume.css'
+import { useState } from 'react'
+import '../css/CoolButton.css'
 
 const Resume = () => {
+  const [showGPA, setShowGPA] = useState(false);
   return (
     <>
       <div className="resume-container">
