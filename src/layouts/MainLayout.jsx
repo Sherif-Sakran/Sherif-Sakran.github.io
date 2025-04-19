@@ -10,6 +10,10 @@ const MainLayout = () => {
         <div className="content">
           <Outlet />
         </div>
+        <div className="footer">
+          <p>© 2025 Sherif Sakran. All rights reserved.</p>
+          {/* <p>Made with ❤️ using React.</p> */}
+        </div>
     </ div>
   )
 }

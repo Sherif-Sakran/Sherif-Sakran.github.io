@@ -1,13 +1,28 @@
 .main-layout {
   display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ensures the footer stays at the bottom */
 }
 
-/* No need to scroll this container horizontally */
 .content {
-  margin-left: 250px; /* match the sidebar width */
+  flex: 1; /* Takes up remaining space to push footer down */
+  margin-left: 250px; /* Sidebar width */
   padding: 30px;
-  /* background-color: #caf0f8; */
   background-color: #ffffff;
   color: #03045e;
-  min-height: 100vh;
+}
+
+.footer {
+  background-color: #e4faff;
+  color: #000000;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 0.95rem;
+  /* border-top: 2px solid #00b4d8; */
+  margin-top: 30px;
+  border-radius: 8px 8px 0 0;
+}
+
+.footer p {
+  margin: 4px 0;
 }
