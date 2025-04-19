@@ -12,7 +12,7 @@ const ProjectCard = ( { project } ) => {
             <h2 className="project-title">{project.title}</h2>
             <p className="project-description">{project.description}</p>
             <div className="project-tags">
-              {project.tech.map((tech, index) => (
+              {project.tech.slice(0,4).map((tech, index) => (
                 <span key={index} className="project-tag">{tech}</span>
               ))}
             </div>
