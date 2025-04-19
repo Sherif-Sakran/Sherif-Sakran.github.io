@@ -16,6 +16,11 @@ const Projects = () => {
             </div>
             <h2 className="project-title">{project.title}</h2>
             <p className="project-description">{project.description}</p>
+            <div className="project-tags">
+              {project.tech.map((tech, index) => (
+                <span key={index} className="project-tag">{tech}</span>
+              ))}
+            </div>
           </Link>
         ))}
       </div>

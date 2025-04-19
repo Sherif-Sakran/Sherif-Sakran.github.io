@@ -73,3 +73,23 @@
     color: #023e8a;
   }
   
+
+  .project-tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  
+  .project-tag {
+    background-color: #e0f2f1;
+    color: #00796b;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
