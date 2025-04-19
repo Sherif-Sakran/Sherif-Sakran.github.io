@@ -4,7 +4,7 @@ import CoolButton from './CoolButton'
 
 const SectionBlock = ( position ) => {
   const { title, date, points } = position
-  const hideOn = "GPA";
+  // const hideOn = "GPA";
   return (
     <ul className="resume-list">
     <li>
@@ -12,8 +12,9 @@ const SectionBlock = ( position ) => {
         { title.regular } ({ date.start } – { date.end })<br />
         <ul className="resume-sublist">
         {points.map((point, index) => (
-          point.includes(hideOn) ?
-          <li key={index}><CoolButton buttonText={hideOn} point={point}/></li> : <li key={index}>{point}</li>
+          // point.includes(hideOn) ?
+          // <li key={index}><CoolButton buttonText={hideOn} point={point}/></li> : 
+          <li key={index}>{point}</li>
         ))}
         </ul>
     </li>
