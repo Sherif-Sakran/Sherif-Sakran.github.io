@@ -1,34 +1,38 @@
+.gpa-gate-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 12px;
+}
+
 .gpa-toggle {
-    background-color: #0077b6;
-    color: white;
-    padding: 6px 14px;
-    font-size: 0.95rem;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-top: 8px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .gpa-toggle:hover {
-    background-color: #0096c7;
-  }
-  
-  .gpa-value {
-    opacity: 0;
-    transform: translateY(-10px);
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    font-size: 1rem;
-    color: #023e8a;
-    /* margin-top: 8px; */
-  }
-  
-  .gpa-value.show {
-    opacity: 1;
-    transform: translateY(0);
-    max-height: 100px;
-    margin-top: 8px;
-  }
-  
+  background-color: #0077b6;
+  color: white;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.gpa-toggle:hover {
+  background-color: #0096c7;
+}
+
+.gpa-value {
+  font-size: 1rem;
+  color: #023e8a;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.gpa-value.show {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
