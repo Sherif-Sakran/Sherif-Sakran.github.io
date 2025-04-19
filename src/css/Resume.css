@@ -1,0 +1,75 @@
+.resume-container {
+    color: #03045e;
+    max-width: 900px;
+    /* margin: 0 auto; */
+    /* padding: 40px 20px; */
+  }
+  
+  .resume-title {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 10px;
+  }
+  
+  .resume-subtitle {
+    font-size: 1.2rem;
+    color: #0096c7;
+    margin-bottom: 30px;
+  }
+  
+  .section-heading {
+    font-size: 1.6rem;
+    color: #0096c7;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #caf0f8;
+    padding-bottom: 5px;
+  }
+  
+  .resume-list {
+    list-style: none;
+    padding-left: 0;
+    color: #023e8a;
+    font-size: 1.05rem;
+    margin-top: 10px;
+  }
+  
+  .resume-list li {
+    margin-bottom: 12px;
+  }
+  
+  .resume-sublist {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1rem;
+    color: #343a40;
+    margin-top: 5px;
+  }
+  
+  .resume-sublist li {
+    margin-bottom: 6px;
+  }
+  
+  .resume-download {
+    display: inline-block;
+    background-color: #0077b6;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume-download:hover {
+    background-color: #0096c7;
+  }
+  
+  .resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
