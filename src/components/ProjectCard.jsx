@@ -6,7 +6,7 @@ const ProjectCard = ( { project } ) => {
   return (
             <Link to={`/projects/${project.id}`} key={project.id} className="project-card">
             <div className="image-container">
-              <img src="../../public/screenshots/Screenshot.png" alt={project.title} className="project-image" />
+              <img src={ project.image } alt={project.title} className="project-image" />
               <div className="project-type-overlay">{project.type}</div>
             </div>
             <h2 className="project-title">{project.title}</h2>
