@@ -16,6 +16,7 @@ const Project = () => {
     return <h1>Project not found</h1>
   }
 
+  const closeModal = () => {setSelectedImage(null); setSelectedCaption('');}
   return (
 <div className="project-detail-container">
       <div className="project-header">
@@ -45,8 +46,8 @@ const Project = () => {
       </div>
 
       {selectedImage && (
-  <div className="lightbox-overlay" onClick={() => setSelectedImage(null)}>
-    <span className="close-lightbox" onClick={() => setSelectedImage(null)}>Close</span>
+  <div className="lightbox-overlay">
+    <button className="modal-close" onClick={closeModal}>x</button>
     <img src={selectedImage} alt="Expanded" className="lightbox-img" />
     <p className="lightbox-caption">{selectedCaption}</p>
   </div>
