@@ -8,8 +8,10 @@ const SectionBlock = ( position ) => {
   return (
     <ul className="resume-list">
     <li>
-        <strong>{ title.bold }</strong><br />
+        <strong>{ title.bold }</strong>
+        { title.regular && <><br />
         { title.regular } ({ date.start } – { date.end })<br />
+        </>}
         <ul className="resume-sublist">
         {points.map((point, index) => (
           // point.includes(hideOn) ?

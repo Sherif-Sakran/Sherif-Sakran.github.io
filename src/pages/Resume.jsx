@@ -12,8 +12,9 @@ const Resume = () => {
         <div className="resume-header">
         <h1 className="resume-title">Resume</h1> 
         <div className="text-center">
-          <a href="/resume.pdf" download className="resume-download">
-            Download PDF
+          {/* <a href="../../public/Sherif Sakran - Resume.pdf" download className="resume-download"> */}
+          <a href="../../public/Sherif Sakran - Resume.pdf" className="resume-download">
+            View PDF
           </a>
           </div>
         </div>
