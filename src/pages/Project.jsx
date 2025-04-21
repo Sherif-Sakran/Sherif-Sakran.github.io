@@ -35,7 +35,7 @@ const Project = () => {
       <p><strong>Type:</strong> {project.type}</p>
       <p><strong>Tech Stack:</strong> {project.tech.join(", ")}</p>
       {/* <p className="project-detail-text">{project.details}</p> */}
-      { project.notes  && <><p className="project-detail-text"><strong>Description: </strong>{project.details}</p></> }
+      { project.details  && <><p className="project-detail-text"><strong>Description: </strong>{project.details}</p></> }
       { project.notes  && <><p ><strong>Notes: </strong>{project.notes}</p></> }
 
       { project.galleryData.length !== 0 && ( <>
