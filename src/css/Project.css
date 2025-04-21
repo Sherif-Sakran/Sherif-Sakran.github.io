@@ -101,55 +101,59 @@
     box-shadow: 0 4px 12px rgba(0, 119, 182, 0.2);
   }
   
-  /* Lightbox overlay */
-  .lightbox-overlay {
+  .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(3, 4, 94, 0.9);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 999;
-    /* cursor: zoom-out; */
+    z-index: 9999;
   }
   
-  .lightbox-img {
-    max-width: 90%;
-    max-height: 80%;
-    border-radius: 10px;
-    box-shadow: 0 8px 24px rgba(0, 119, 182, 0.6);
+  .modal-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  .lightbox-caption {
-    color: white;
-    margin-top: 20px;
-    font-size: 1.1rem;
+  .modal-content img {
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: 8px;
+    object-fit: contain;
+    display: block;
+  }
+  
+  .modal-caption {
+    color: #fff;
+    margin-top: 12px;
+    font-size: 0.95rem;
     text-align: center;
+    max-width: 80%;
   }
   
-
   .modal-close {
     /* position: absolute; */
-    top: 15px;
-    right: 20px;
-    background-color: rgb(255, 0, 0);
-    border: none;
-    border-radius: 8px;
-    padding: 4px 10px;
     margin-bottom: 4px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ffffff;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 6px 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.2s ease;
-  }
-  
-  .modal-close:hover {
-    background-color: #ff6363;
+    z-index: 10000;
   }
   

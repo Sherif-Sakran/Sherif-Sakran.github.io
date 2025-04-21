@@ -17,6 +17,12 @@ const Project = () => {
   }
 
   const closeModal = () => {setSelectedImage(null); setSelectedCaption('');}
+  const openModal = (screenshot) => {
+    setSelectedImage(screenshot.imagePath);
+    setSelectedCaption(screenshot.caption);
+    console.log(screenshot.imagePath, screenshot.caption);
+  }
+
   return (
 <div className="project-detail-container">
       <div className="project-header">
@@ -35,23 +41,25 @@ const Project = () => {
       <h3>Gallery</h3>
       <div className="screenshot-gallery">
         {project.galleryData.map((screenshot, index) => (
-          <figure key={index} onClick={() => {
-            setSelectedImage(screenshot.imagePath);
-            setSelectedCaption(screenshot.caption);
-          }}>
-            <img src={screenshot.imagePath} alt={screenshot.caption} />
+          <figure key={index} onClick={() => openModal(screenshot)}>
+            <img src={screenshot.imagePath} alt={screenshot.caption}/>
             <figcaption>{screenshot.caption}</figcaption>
           </figure>))}
       </div>
       </div>
 
       {selectedImage && (
-  <div className="lightbox-overlay">
-    <button className="modal-close" onClick={closeModal}>x</button>
-    <img src={selectedImage} alt="Expanded" className="lightbox-img" />
-    <p className="lightbox-caption">{selectedCaption}</p>
+  <div className="modal-overlay">
+    <div className="modal-content">
+      <button className="modal-close" onClick={closeModal}>×</button>
+      <img src={selectedImage} alt={selectedImage.caption} />
+      <figcaption className="modal-caption">{ selectedCaption }</figcaption>
+    </div>
   </div>
 )}
+
+
+
 
                 
 
