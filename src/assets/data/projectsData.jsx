@@ -1,8 +1,22 @@
 export const projects = [
   {
+    id: "speaker-identification",
+    title: "Speaker Identification System",
+    type: "Individual Project",
+    description: "A desktop application that trains on speaker utterances and recognizes speakers in real time.",
+    image: "../../public/screenshots/speaker-identification/Fig. A.3.JPG",
+    tech: ["Sci-Kit Learn", "Tkinter", "TensorFlow", "Pydub"],
+    details: "This toolkit is the outcome of a study, still unpublished, titled ‘Developing a Robust Real-Time Speaker Identification System: Comparative Evaluation and application’. This toolkit is the application part, which I developed based on the results I got from the comparative evaluation of several speaker recognition approaches. I evaluated different machine learning models, including Convolutional Neural Networks, Support Vector Machines, Gaussian Mixture Models, and I used two different forms of speaker-specific features, Spectrograms and Mel-Frequency Cepstral Coefficients (along with their first and second delta derivatives). Since I wanted the minimal training overhead, I conducted the evaluation for three conditions of signal processing: neither normalising the audio signal nor applying noise reduction; normalising the signals and not applying noise reduction; and applying both audio normalization and noise reduction. The outcomes of the study suggested that environment variability is a critical issue in speaker recognition systems, and I tackled this issue by enabling training speakers on the fly. As part of the process, I also developed an audio processing toolkit that provides functionalities to audios, including trimming and segmenting long utterances, which are useful in audio processing studies.",
+    notes: "",
+    galleryData:[{imagePath: "../../public/screenshots/speaker-identification/Fig. A.1.JPG",caption: "The tab of speaker enrollment from a dataset of speakers of the Speaker Identification application."},{imagePath: "../../public/screenshots/speaker-identification/Fig. A.2.JPG",caption: "The tab of training speakers on the fly of the Speaker Identification application."},{imagePath: "../../public/screenshots/speaker-identification/Fig. A.3.JPG",caption: "A screenshot from the demo showing the tab of real-time speaker identification of the Speaker Identification application while recognizing the speaker."},{imagePath: "../../public/screenshots/speaker-identification/Fig. A.4.JPG",caption: "The format conversion tab of the developed Audio Processing Toolkit."},{imagePath: "../../public/screenshots/speaker-identification/Fig. A.5.JPG",caption: "The silence removal tab of the developed Audio Processing Toolkit."}, {imagePath: "../../public/screenshots/speaker-identification/Fig. A.6.JPG",caption: "The segmentation tab of the developed Audio Processing Toolkit."}, {imagePath: "../../public/screenshots/speaker-identification/Fig. A.7.JPG",caption: "The trimmer tab of the developed Audio Processing Toolkit."}, {imagePath: "../../public/screenshots/speaker-identification/Fig. A.8.JPG",caption: "The noise reduction tab of the developed Audio Processing Toolkit."}, {imagePath: "../../public/screenshots/speaker-identification/Fig. A.9.JPG",caption: "The audio normalization tab of the developed Audio Processing Toolkit."},],
+    github: " https://github.com/Sherif-Sakran/speaker_identification_toolkit",
+    live: "",
+    report: ""
+  },
+  {
     id: "ev-vehicle",
     title: "E-Vehicle Share System",
-    type: "Group Project",
+    type: "Individal & Group Project",
     description: "A Web-based system for renting and tracking electric vehicles across Glasgow.",
     image: "../../public/screenshots/e-vehicle/e-vehicle.png",
     tech: ["Django", "React", "SQLite", "Postman"],
@@ -13,20 +27,7 @@ export const projects = [
     live: "",
     report: ""
   },
-  ,
-    {
-      id: "chatbot-ui",
-      title: "Custom Chatbot UI",
-      type: "Personal Project",
-      description: "A React interface for interacting with AI models in real time.",
-      image: "/screenshots/chatbot.jpg",
-      tech: ["React", "Tailwind", "OpenAI API"],
-      github: "https://github.com/sherif/chatbot-ui",
-      report: "https://report.sherif.dev",
-      live: "https://chatbot.sherif.dev",
-      details: "This chatbot UI allows real-time interaction with different AI models. I focused on intuitive design and API response handling.",
-      galleryData:[{imagePath: "../../public/screenshots/Screenshot.png",caption: "screenshot 0"},{imagePath: "../../public/screenshots/Screenshot.png",caption: "screenshot 1"},{imagePath: "../../public/screenshots/Screenshot.png",caption: "screenshot 2"},{
-        imagePath: "../../public/screenshots/Screenshot.png",caption: "screenshot 3"},]
-    }
+
+
   ];
   
