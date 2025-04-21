@@ -44,6 +44,26 @@ export const projects = [
     live: "",
     report: ""
   },
+  {
+    id: "information-visualisation",
+    title: "Information Visualisation",
+    type: " Individual Project",
+    description: "Application of advanced concepts and techniques in information visualisation developed in Python using Altair.",
+    image: "../../public/screenshots/information-visualisation/home.jpeg",
+    tech: ["Python", "Altair"], 
+    details: "This project was part of the coursework of the Information Visualisation course which focuses on applying advanced concepts and techniques for visualisations. The dataset I worked on contains different attributes about the world countries, and I chose to represent the countries in a grid where the countries of each continent are stacked in a column. The system implements brushing and linking in multiple plots, and it applies filters on attributes. It implements several interactive techniques that allow smooth analysis of the data, including selecting a subset, highlighting a part, zooming in and out, and dynamic selection of countries and attributes in plots. Remarkably, the system implements ‘generalised selection’ such that the hierarchy of having the countries within continents are used to generalise the selection of a country (or more) to a continent, and then to the world.",
+
+    notes: "This project was part of a larger group project that involved the development and evaluation of three systems, and this was one of them. We also conducted an evaluation with five participants to assess the users’ performance on the three systems on a pre-defined list of twelve tasks.",
+
+    galleryData:[{imagePath: "../../public/screenshots/information-visualisation/1 main.png",caption: "The main visualisation system in which the grid and bar chart are linked. The grid is for selection and the bar chart is for showing a dynamically chosen attributed and filtered with sliders based on other attributes."},{imagePath: "../../public/screenshots/information-visualisation/2 main.png", caption: "Multiple countries are selected from the chart at the top, and, therefore, are shown in the linked bar chart below."},{imagePath: "../../public/screenshots/information-visualisation/2.1 main.png",caption: "A screenshot showing active and inactive selected countries so that the generalised selection feature gets to know which continent to generalise to, which is an edge case."},{imagePath: "../../public/screenshots/information-visualisation/3 bar chart.png",caption: "The bar chart shows a dynamically selected attribute and allows filtering on some other attributes using sliders."},{imagePath: "../../public/screenshots/information-visualisation/4 correlation plot.png",caption: "A plot showing the correlation between two dynamically chosen variables. "},{imagePath: "../../public/screenshots/information-visualisation/5 correlation plot focus and zoom.png",caption: "The correlation plot applying group selection by continent, zooming in, and navigating through the chart."},{imagePath: "../../public/screenshots/information-visualisation/6 brushing and linking.png",caption: "Four linked charts showing the best performing 10 countries in four different attributes."}, {imagePath: "../../public/screenshots/information-visualisation/7 brushing and linking.png",caption: "Brushing is applied to the four linked charts showing the common top-performing countries amoung the different attribbutes."},],
+    // github: "https://github.com/Sherif-Sakran/IV_system_A",
+    // live: "https://gla-my.sharepoint.com/:v:/g/personal/3011251s_student_gla_ac_uk/ETZfkilPkrtHknJGoN_VXPAB9g09STW1gG_g6SyuJ6cZuQ?e=QJ6FD7",
+    github: "https://github.com/Sherif-Sakran/IV_system_A",
+    live: "https://sherif-sakran.github.io/IV_system_A/",
+    report: ""
+  },
+
+
 
 
 
