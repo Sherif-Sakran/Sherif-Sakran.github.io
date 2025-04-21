@@ -62,6 +62,39 @@ export const projects = [
     live: "https://sherif-sakran.github.io/IV_system_A/",
     report: ""
   },
+  {
+    id: "gpa-calculator",
+    title: "GPA Calculator",
+    type: " Individual Project",
+    description: "A GPA-calculator with the 'what if' functionality - the first React project I worked on while learning it.",
+    image: "../../public/screenshots/gpa-calculator/home.png",
+    tech: ["React"], 
+    details: "This is a simple GPA calculator.",
+
+    notes: "I only shared it because the GPA calculator I was using during my undergraduate degree did not allow me to remove a course's effect from the GPA as if I had not taken it. I always wanted to remove the grades of the statics and marketing courses from my GPA.",
+
+    galleryData:[],
+    github: "https://github.com/Sherif-Sakran/gpa-calculator",
+    live: "https://sherif-sakran.github.io/gpa-calculator/",
+    report: ""
+  },
+  {
+    id: "resala-auc",
+    title: "Resala AUC Website",
+    type: " Individual Project",
+    description: "The first website for me and for Resala AUC, a lovely team I was part of.",
+    image: "../../public/screenshots/resala-auc/home.png",
+    tech: ["HTML", "CSS", "JavaScript"], 
+    details: "This is the first website development experience for me. I hoped for something simple and quick to attract members to join the team, and this long weekend project did the job.",
+
+    notes: "Resala AUC is a lovely community service clut at AUC, and I was privileged to have been part of it.",
+
+    galleryData:[],
+    github: "https://github.com/resala-auc/spring24",
+    live: "https://resala-auc.github.io/spring24/",
+    report: ""
+  },
+
 
 
 
