@@ -38,9 +38,9 @@ const Project = () => {
       { project.notes  && <><p className="project-detail-text"><strong>Description: </strong>{project.details}</p></> }
       { project.notes  && <><p ><strong>Notes: </strong>{project.notes}</p></> }
 
+      { project.galleryData.length !== 0 && ( <>
       <div className="project-screenshots">
-      
-      <h3>Gallery</h3>
+      <h3>Gallery</h3> 
       <div className="screenshot-gallery">
         {project.galleryData.map((screenshot, index) => (
           <figure key={index} onClick={() => openModal(screenshot)}>
@@ -49,7 +49,8 @@ const Project = () => {
           </figure>))}
       </div>
       </div>
-
+      </>)
+        }
       {selectedImage && (
   <div className="modal-overlay">
     <div className="modal-content">
@@ -66,17 +67,17 @@ const Project = () => {
                 
 
 
-      {project.github && (
-        <p>
-          <a href={project.github} target="_blank" rel="noreferrer">View on GitHub</a>
-        </p>
-      )}
-
       {project.live && (
-        <p>
+          <p>
           <a href={project.live} target="_blank" rel="noreferrer">Live Demo</a>
         </p>
       )}
+      
+            {project.github && (
+              <p>
+                <a href={project.github} target="_blank" rel="noreferrer">View on GitHub</a>
+              </p>
+            )}
 
       {project.report && (
         <p>
