@@ -1,5 +1,22 @@
 export const projects = [
   {
+    id: "text-as-data",
+    title: "Museuem Record Classifications",
+    type: " Individual Project",
+    description: "A text classification project that fine-tunes four transformer-based models on textual records of five museums.",
+    image: "../../public/screenshots/text-as-data/5 best.png",
+    tech: ["Spacy", "HugginFace"], 
+    details: "This project was part of the coursework of the Text-as-Data for MSc course. I was given a dataset of textual records of five museums, and I was asked to classify the records into five classes. There are 150 samples for training, 50 for validation, and 50 for testing. The dataset required pre-processing to have the records and labels consistent across the five classes. Followingly, I used Spacy to tokenize the data and HuggingFace to fine-tune four transformer-based models: bert-base-uncased, roberta-base, distilbert-base-uncased, and BiomedNLP-BiomedBERT-base-uncased-abstract. I finetuned the models on the training set and evaluated the models on the validation set using accuracy, precision, recall, and F1-score metrics. The best performing model was distilbert-base-uncased with an F1 score of 0.94. It achieved an F1 score of 0.90 on the testing set.",
+  
+    notes: "",
+  
+    galleryData:[{imagePath: "../../public/screenshots/text-as-data/1 bert-base-uncased.png",caption: "The perfomance of the finetuned bert-base-uncased on the validation set."},{imagePath: "../../public/screenshots/text-as-data/2 roberta-base.png", caption: "The perfomance of the finetuned roberta-base on the validation set."},{imagePath: "../../public/screenshots/text-as-data/3 distilbert-base-uncased.png",caption: "The perfomance of the finetuned distilbert-base-uncased on the validation set."},{imagePath: "../../public/screenshots/text-as-data/4 BiomedNLP-BiomedBERT-base-uncased-abstract.png",caption: "The perfomance of the finetuned BiomedNLP-BiomedBERT-base-uncased-abstract on the validation set."},{imagePath: "../../public/screenshots/text-as-data/5 best.png",caption: "The perfomance of the best finetuned model, based on bert-base-uncased, on the testing set."},{imagePath: "../../public/screenshots/text-as-data/6 confusion matrix.png",caption: "The confusion matrix of the predictions made by the best performing model (finetuned distilbert-base-uncased) on the testing set of 50 records."},],
+
+    github: "",
+    live: "",
+    report: ""
+  },
+  {
     id: "speaker-identification",
     title: "Speaker Identification System",
     type: "Individual Project",
@@ -94,7 +111,6 @@ export const projects = [
     live: "https://resala-auc.github.io/spring24/",
     report: ""
   },
-
 
 
 
