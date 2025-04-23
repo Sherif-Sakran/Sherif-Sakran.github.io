@@ -62,6 +62,24 @@ export const projects = [
     report: ""
   },
   {
+    id: "indoor-localisation",
+    title: "Explainable Indoor Localisation",
+    type: "Individual Project",
+    description: "Application of a building- and AP- independent indoor location predictor with insights supported by XAI.",
+    // image: "../../public/screenshots/indoor-localisation/7 local explanation.png",
+    image: "../../public/screenshots/indoor-localisation/home_2.png",
+    tech: ["TensorFlow", "OpenCV", "SHAP", "LIME"],
+    details: "This project is about indoor location prediction to locate a person indside a building, which recuires techniques other than the GPS. The project consists of three main parts. Firstly, implementing and optimising an existing approach for indoor localisation that is independent on the building and access points (APs). Secondly, leveraging explainable AI (XAI) to gain insights into the predictions. Thirdly, simulating abrupt environmental changes to the APs signals and gaining insights by analysing the local and global explanations made by the XAI tools: SHAP and LIME. I used three datasets that were publicly available and contained the received signal strength (RSS) of access points taken from inside three buildings alongside the corresponding locations of the devices that collected the readings. The approach, called StoryTeller, was heavily reliant on signal processing that transforms an example of RSS values into an image of a ‘virtual building’ that makes the predictions independent on the building and access points. I implemented the approach, as presented by its authors, by representing the APs as dots and adjusting their position based on their RSS values. The transformation included other steps of processing, including data augmentation and APs location estimation. I transformed the datasets into images of virtual buildings, and I used VGG16 as a baseline model for training. Through finetuning the model and changing the APs shape and size within the virtual building, I managed to improve the performance of four out of the six cross-building prediction experiments of up to 25\%. I used SHAP and LIME to explain the predictions made by the model both locally and globally to gain insights into the model’s performance. For simulating abrupt environmental changes, I introduced noise and signal reduction to the APs readings, and then I used XGBoost for training and analysed its predictions using SHAP and LIME.",
+
+
+    notes: "This project was part of the my internships as a Research Intern in Dr. Moustafa Youssef's research group.",
+
+    galleryData:[{imagePath: "../../public/screenshots/indoor-localisation/0 transformation.png",caption: "The raw data of a single example showing the readings from 1000 APs (\& metadata) and an image of the virtual building after transformation."},{imagePath: "../../public/screenshots/indoor-localisation/1 square sizes.png",caption: "Three virtual buildings each of which shows a different size for the APs (4, 5, 7)."},{imagePath: "../../public/screenshots/indoor-localisation/2 lime for images.png", caption: "One 45-superpixel perturbation of the generated examples by LIME around the input image."},{imagePath: "../../public/screenshots/indoor-localisation/3 most important superpixels.png",caption: "LIME showing the most top 10 superpixels used for the prediction, among them the stronges AP in the middle row."},{imagePath: "../../public/screenshots/indoor-localisation/4 shap for images.png",caption: "A local explanation done by SHAP that highlights the parts of the virtual building that contributed most to the prediction."},{imagePath: "../../public/screenshots/indoor-localisation/5 shap global explanations.png",caption: "The impact of introducing 50\% reduction to the RSS values to 30\% of the APs explained by SHAP."},{imagePath: "../../public/screenshots/indoor-localisation/6 aps reduction impact.png",caption: "The performance reduction to the model's predictions brought by the APs reduction at different levels."},{imagePath: "../../public/screenshots/indoor-localisation/7 local explanation.png",caption: "A local explanation by SHAP and LIME for a single example (true prediction) before simulating abrupt environmental changes."},{imagePath: "../../public/screenshots/indoor-localisation/8 local explanation after signal deformation.png", caption: "A local explanation by SHAP and LIME for the same example (of the previous figure) after simulating abrupt environmental changes, leading the model to a false prediction."},],
+    github: "https://github.com/Sherif-Sakran/face_recognition ",
+    live: "",
+    report: ""
+  },
+  {
     id: "information-visualisation",
     title: "Information Visualisation",
     type: " Individual Project",
