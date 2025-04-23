@@ -9,7 +9,7 @@ const About = () => {
         <em>Software engineer by title, human-AI translator by passion.</em>
       </p>
       <p className="about-bio">
-      Hi! I'm Sherif, and I am currently an MSc student in Computing Science at UofG. I build systems that help machines listen better and people speak smarter. With a focus on <strong>Natural Language Processing</strong> and <strong>Human-Computer Interaction</strong>, I explore how code can deepen understanding between humans and intelligent systems. 
+      Hi! I'm Sherif, and I am currently an MSc student in Computing Science at The University of Glasgow where I am delving into machine learning. I build systems that help machines listen better and people speak smarter. With a focus on <strong>Natural Language Processing</strong> and <strong>Human-Computer Interaction</strong>, I explore how code can deepen understanding between humans and intelligent, interactive systems. 
       </p>
 
       <h2 className="section-heading">Special Interests</h2>
@@ -28,7 +28,8 @@ const About = () => {
       <div className="contact-section">
         <h2 className="section-heading">Get in Touch</h2>
         <p>Connect on <a href="https://www.linkedin.com/in/sherif-sakran/" target="_blank" rel="noreferrer">LinkedIn</a></p>
-        <p>Contact me via <a href="mailto:sherifsakraan@gmail.com">Email</a></p>
+        {/* <p>Contact me via <a href="mailto:sherifsakraan@gmail.com">Email</a></p> */}
+        <p>Contact me via <a href="mailto:3011251S@student.gla.ac.uk">Email</a></p>
       </div>
     </div>
   )
