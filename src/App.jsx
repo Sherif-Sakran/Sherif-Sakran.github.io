@@ -5,11 +5,13 @@ import Projects from './pages/Projects'
 import Project from './pages/Project'
 import Resume from './pages/Resume'
 import './App.css'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<About />} />
