@@ -14,7 +14,8 @@ export const resumeSections = [
                 points: [
                     "Current GPA: 19.25 (A4)",
                     "Research Interests: Natural Language Processing and Human-Computer Interaction",
-                    "Awarded the African Excellence full scholarship award."
+                    "Awarded the African Excellence full scholarship award (Acceptance rate: 1-1.5\%",
+                    "Coursework includes: Machine Learning and AI, Introduction to Data Science and Systems, Deep Learning for MSc, Text-as-Data, Human-Computer Interaction Design and Evaluation, Mobile Human-Computer Interaction, and Information Visualisation"
                 ]
             },
             {
@@ -29,7 +30,7 @@ export const resumeSections = [
                 points: [
                     "GPA: 3.845/4.0 (Highest Honors)",
                     "Double Minor in Mathematics and Business Administration",
-                    ""
+                    "Coursework includes: Fundamentals of Computing (I & II), Analysis and Design of Algorithms, Computer Organisation and Assembly, Computer Architecture, Operating Systems, Database Systems, Programming Languages, Distributed Systems, and Digital Design"
                 ]
             },
             {
@@ -67,15 +68,15 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "Undergraduate Teaching Assistant",
+                    bold: "Undergraduate Teaching Assistant (CS II)",
                     regular: "AUC – Cairo, EG"
                 },
                 date: {
-                    start: "Fall 2020",
-                    end: "Spring 2023"
+                    start: "Feb 2023",
+                    end: "May 2023"
                 },
                 points: [
-                    "Held hidden labs to implement OOP concepts, data structures, and algorithms",
+                    "Held hidden labs to implement OOP concepts sorting algorithms",
                     "Provided office hours to explain concepts to students and answer their questions",
                     "Assisted students with understanding their coursework and project requirements"
                 ]
@@ -108,6 +109,21 @@ export const resumeSections = [
                     "Worked on a face recognition system to digitise the library’s assets",
                     "Utilised the few-shot learning approach to train and recognise faces in a GUI tool developed in Python",
                     "(Project was presented as a library tool and shared with librarians at the MELA virtual conference (2022))"
+                ]
+            },
+            {
+                title: {
+                    bold: "Undergraduate Teaching Assistant (CS I)",
+                    regular: "AUC – Cairo, EG"
+                },
+                date: {
+                    start: "Sep 2020",
+                    end: "Dec 2020"
+                },
+                points: [
+                    "Held sessions to explain fundamentals of programming, including numbering systems and data structures",
+                    "Provided office hours to explain concepts to students and answer their questions",
+                    "Prepared and explained exam review notes for students"
                 ]
             },
         ]
