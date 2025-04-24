@@ -117,7 +117,7 @@ export const projects = [
     id: "resala-auc",
     title: "Resala AUC Website",
     type: " Individual Project",
-    description: "The first website for me and for Resala AUC, a lovely team I was part of.",
+    description: "The first website for me and for Resala AUC, a lovely team I have been part of.",
     image: "../../public/screenshots/resala-auc/home.png",
     tech: ["HTML", "CSS", "JavaScript"], 
     details: "This is the first website development experience for me. I hoped for something simple and quick to attract members to join the team, and this long weekend project did the job.",
