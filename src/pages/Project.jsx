@@ -11,7 +11,11 @@ const Project = () => {
   const [selectedCaption, setSelectedCaption] = useState('');
   const { id } = useParams();
   const project = projects.find(project => project.id === id);
+  const projectIndex = projects.findIndex(project => project.id === id);
+  const nextProject = projects[(projectIndex + 1) % projects.length];
+  const prevProject = projects[(projectIndex - 1 + projects.length) % projects.length];
 
+  
   if (!project) {
     return <h1>Project not found</h1>
   }
@@ -26,7 +30,7 @@ const Project = () => {
   return (
 <div className="project-detail-container">
       <div className="project-header">
-        <button className="back-button" onClick={() => navigate(-1)}>
+        <button className="navigation-button" onClick={() => navigate('/projects')}>
           ← Projects
         </button>
         <h1 className="project-title">{project.title}</h1>
@@ -61,12 +65,6 @@ const Project = () => {
   </div>
 )}
 
-
-
-
-                
-
-
       {project.live && (
           <p>
           <a href={project.live} target="_blank" rel="noreferrer">Live Demo</a>
@@ -84,6 +82,25 @@ const Project = () => {
           <a href={project.report} target="_blank" rel="noreferrer">Report</a>
         </p>
       )}
+    <div className="navigation-buttons">
+      {prevProject && (
+        <button
+          className="navigation-button"
+          onClick={() => navigate(`/projects/${prevProject.id}`)}
+        >
+          ← Previous
+        </button>
+      )}
+
+      {nextProject && (
+        <button
+          className="navigation-button"
+          onClick={() => navigate(`/projects/${nextProject.id}`)}
+        >
+          Next →
+        </button>
+      )}
+    </div>
     </div>
   )
 }

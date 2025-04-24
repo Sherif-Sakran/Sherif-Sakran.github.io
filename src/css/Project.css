@@ -7,7 +7,7 @@
   margin-top: 35px;
 }
 
-.back-button {
+.navigation-button {
   padding: 8px 16px;
   background-color: #0077b6;
   color: white;
@@ -17,7 +17,14 @@
   transition: background-color 0.3s ease;
 }
 
-.back-button:hover {
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.navigation-button:hover {
   background-color: #00b4d8;
 }
 
@@ -29,7 +36,7 @@
 .project-detail-container {
     /* padding: 20px; */
     max-width: 800px;
-    /* margin: auto; */
+    margin: auto;
     color: #03045e;
   }
   
