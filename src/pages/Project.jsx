@@ -42,6 +42,24 @@ const Project = () => {
       { project.details  && <><p className="project-detail-text"><strong>Description: </strong>{project.details}</p></> }
       { project.notes  && <><p ><strong>Notes: </strong>{project.notes}</p></> }
 
+      {project.live && (
+          <p>
+          <a href={project.live} target="_blank" rel="noreferrer">Live Demo</a>
+        </p>
+      )}
+      
+            {project.github && (
+              <p>
+                <a href={project.github} target="_blank" rel="noreferrer">View on GitHub</a>
+              </p>
+            )}
+
+      {project.report && (
+        <p>
+          <a href={project.report} target="_blank" rel="noreferrer">Report</a>
+        </p>
+      )}
+
       { project.galleryData.length !== 0 && ( <>
       <div className="project-screenshots">
       <h3>Gallery</h3> 
@@ -65,23 +83,7 @@ const Project = () => {
   </div>
 )}
 
-      {project.live && (
-          <p>
-          <a href={project.live} target="_blank" rel="noreferrer">Live Demo</a>
-        </p>
-      )}
-      
-            {project.github && (
-              <p>
-                <a href={project.github} target="_blank" rel="noreferrer">View on GitHub</a>
-              </p>
-            )}
 
-      {project.report && (
-        <p>
-          <a href={project.report} target="_blank" rel="noreferrer">Report</a>
-        </p>
-      )}
     <div className="navigation-buttons">
       {prevProject && (
         <button
