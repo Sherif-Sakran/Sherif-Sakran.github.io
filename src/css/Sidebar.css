@@ -66,3 +66,8 @@
   color: #48cae4;
 }
 
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
