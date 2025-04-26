@@ -30,7 +30,7 @@ export const resumeSections = [
                 points: [
                     "GPA: 3.845/4.0 (Highest Honors)",
                     "Double Minor in Mathematics and Business Administration",
-                    "Coursework includes: Fundamentals of Computing (I & II), Analysis and Design of Algorithms, Computer Organisation and Assembly, Computer Architecture, Operating Systems, Database Systems, Programming Languages, Distributed Systems, and Digital Design"
+                    "Coursework includes: Fundamentals of Computing (I & II), Analysis and Design of Algorithms, Programming Languages, Computer Organisation and Assembly, Computer Architecture, Operating Systems, Database Systems, Embedded Systems, Distributed Systems, and Digital Design (I and II)"
                 ]
             },
             {
@@ -309,7 +309,7 @@ export const resumeSections = [
         sectionBlocks: [
             {
                 title: {
-                    bold: "AUC student organisations Progress Award (Resala), AUC",
+                    bold: "The African Excellence Award, UofG - 2024/2025",
                     regular: ""
                 },
                 date: {
@@ -321,7 +321,7 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "AUC student organisations Best Collaboration Award (Resala), AUC",
+                    bold: "AUC student organisations Progress Award (Resala), AUC - May 2024",
                     regular: ""
                 },
                 date: {
@@ -333,7 +333,7 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "Erasmus+ Award for Study Abroad, UoE",
+                    bold: "AUC student organisations Best Collaboration Award (Resala), AUC - May 2024",
                     regular: ""
                 },
                 date: {
@@ -345,7 +345,7 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "Empower Full Merit Scholarship at AUC",
+                    bold: "Erasmus+ Award for Study Abroad, UoE - Fall 2022",
                     regular: ""
                 },
                 date: {
@@ -357,7 +357,7 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "Top 10 in Math Section in Thanawya Amma in Fayoum",
+                    bold: "Empower Full Merit Scholarship at AUC - (Fall 2019 - Spring 2024)",
                     regular: ""
                 },
                 date: {
@@ -369,7 +369,7 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "National Finalist in Environmental Engineering, Intel ISEF",
+                    bold: "Top 10 in Math Section in Thanawya Amma in Fayoum - July 2019",
                     regular: ""
                 },
                 date: {
@@ -381,7 +381,19 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "First Place in the I Am an Explorer students competition, Fayoum",
+                    bold: "National Finalist in Environmental Engineering, Intel ISEF - March 2019",
+                    regular: ""
+                },
+                date: {
+                    start: "",
+                    end: ""
+                },
+                points: [
+                ]
+            },
+            {
+                title: {
+                    bold: "First Place in the I Am an Explorer students competition, Fayoum - April 2018",
                     regular: ""
                 },
                 date: {
