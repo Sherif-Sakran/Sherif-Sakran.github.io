@@ -10,7 +10,7 @@ import ScrollToTop from './components/ScrollToTop'
 function App() {
 
   return (
-    <HashRouter>
+    <Router>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
@@ -21,7 +21,7 @@ function App() {
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Route>
       </Routes>
-    </HashRouter>  )
+    </Router>  )
 }
 
 export default App
