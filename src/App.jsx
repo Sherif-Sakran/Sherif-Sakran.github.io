@@ -10,7 +10,7 @@ import ScrollToTop from './components/ScrollToTop'
 function App() {
 
   return (
-    <Router>
+    <Router basename="/">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
