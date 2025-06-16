@@ -6,7 +6,7 @@ import ProjectCard from '../components/ProjectCard'
 const Projects = () => {
   return (
     <div className="projects-container">
-      <h1 className="projects-title">Projects</h1>
+      <h1 className="projects-title">Selected Projects</h1>
       <div className="projects-grid">
         {projects.map(project => (
           <ProjectCard key={project.id} project={project} />
