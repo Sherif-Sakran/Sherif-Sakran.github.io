@@ -12,7 +12,7 @@ export const resumeSections = [
                     end: "Aug 2025"
                 },
                 points: [
-                    "cumulative GPA: A4",
+                    "Cumulative GPA: A4",
                     "Research Interests: Natural Language Processing (NLP) and Human-Computer Interaction (HCI)",
                     "Awarded the African Excellence full scholarship award (Acceptance rate: 1-1.5\%",
                     "Coursework includes: Machine Learning and AI, Deep Learning, Text-as-Data, Data Science and Systems,  HCI Design and Evaluation, Mobile HCI, Information Visualisation, and Conversational Interfaces (audited)."
