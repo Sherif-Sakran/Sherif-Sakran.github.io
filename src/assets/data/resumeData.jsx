@@ -12,10 +12,10 @@ export const resumeSections = [
                     end: "Aug 2025"
                 },
                 points: [
-                    "Current GPA: 19.25 (A4)",
-                    "Research Interests: Natural Language Processing and Human-Computer Interaction",
+                    "cumulative GPA: A4",
+                    "Research Interests: Natural Language Processing (NLP) and Human-Computer Interaction (HCI)",
                     "Awarded the African Excellence full scholarship award (Acceptance rate: 1-1.5\%",
-                    "Coursework includes: Machine Learning and AI, Introduction to Data Science and Systems, Deep Learning for MSc, Text-as-Data, Human-Computer Interaction Design and Evaluation, Mobile Human-Computer Interaction, and Information Visualisation"
+                    "Coursework includes: Machine Learning and AI, Deep Learning, Text-as-Data, Data Science and Systems,  HCI Design and Evaluation, Mobile HCI, Information Visualisation, and Conversational Interfaces (audited)."
                 ]
             },
             {
@@ -131,6 +131,22 @@ export const resumeSections = [
     {
         sectionName: "Selected Projects",
         sectionBlocks: [
+            {
+                title: {
+                    bold: "Hadi - The Weather Chatbot, UofG Coursework",
+                    regular: ""
+                },
+                date: {
+                    start: "",
+                    end: ""
+                },
+                points: [
+                    "Developed a natural language dialogue system that extracts location/date from user queries and returns real-time weather forecasts.",
+                    "Integrated LangChain with a locally run LLaMA 3.2 model via Ollama to manage conversation flow and external API interactions.",
+                    "Built an interactive front end using Streamlit, with OpenStreetMap for geocoding and WeatherAPI for forecast data.",
+                    "Tools Used: LangChain, Ollama, LLaMA 3.2, Streamlit, WeatherAPI, OpenStreetMap"
+                ]
+            },
             {
                 title: {
                     bold: "Text Classification for Museum Institutions, UofG Coursework",
