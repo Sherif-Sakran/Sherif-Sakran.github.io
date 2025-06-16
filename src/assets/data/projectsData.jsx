@@ -7,6 +7,7 @@ export const projects = [
     image: "/screenshots/hadi-chatbot/Screenshot (61).png",
     tech: ["LangChain", "Ollama", "Streamlit"], 
     details: "Check the screenshot above where Hadi is introducing itself on its own.",
+    // details: "As part of the MSc Conversational Interfaces course that I was auditing, I built a task-oriented dialogue system that lets users ask about the weather using natural language. The system parses user queries, extracts location and date info, and fetches real-time weather forecasts through API calls. I used LangChain to structure the conversation flow and connect it to a locally run LLaMA 3.2 model via Ollama. The app uses Nominatim (OpenStreetMap) to turn place names into coordinates, and then queries the WeatherAPI for accurate forecast data. I built the front end in Streamlit to keep things simple and interactive. This project was a good opportunity to start working with LangChain and to explore how LLMs can be used to drive conversation agents that utilise external resources.",
   
     notes: "",
   
