@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { HashRouter as Router, Routes, Route} from 'react-router-dom'
 import MainLayout from './layouts/MainLayout'
 import About from './pages/About'
 import Projects from './pages/Projects'
@@ -10,7 +10,7 @@ import ScrollToTop from './components/ScrollToTop'
 function App() {
 
   return (
-    <Router basename="/">
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
@@ -21,7 +21,7 @@ function App() {
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Route>
       </Routes>
-    </Router>  )
+    </HashRouter>  )
 }
 
 export default App
