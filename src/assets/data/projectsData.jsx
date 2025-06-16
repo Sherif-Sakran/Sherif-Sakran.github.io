@@ -1,8 +1,25 @@
 export const projects = [
   {
+    id: "conversational-interfaces",
+    title: "Hadi - The Weather Chatbot",
+    type: "Individual Project",
+    description: "An LLM-based conversational interface designed to answer questions about the weather through API calls.",
+    image: "/screenshots/hadi-chatbot/Screenshot (61).png",
+    tech: ["LangChain", "Ollama", "Streamlit"], 
+    details: "Check the screenshot above where Hadi is introducing itself on its own.",
+  
+    notes: "",
+  
+    galleryData:[{imagePath: "/screenshots/hadi-chatbot/Screenshot (54).png",caption: "Sample 1: using Hadi for weather forcasts."},{imagePath: "/screenshots/hadi-chatbot/Screenshot (55).png", caption: "Sample 2: using Hadi for past weather information."},{imagePath: "/screenshots/hadi-chatbot/Screenshot (56).png",caption: "Sample 3: using Hadi for weather forcasts and details."},{imagePath: "/screenshots/hadi-chatbot/Screenshot (57).png",caption: 'Sample 4: using Hadi for weather forcasts. The example is not perfect as Hadi explicitly said, "(still in the future forecast context), but this can be handled through the prompt."'},{imagePath: "/screenshots/hadi-chatbot/Screenshot (58).png",caption: "Sample 5: using Hadi for past weather information and details."},{imagePath: "/screenshots/hadi-chatbot/Screenshot (59).png",caption: "Sample 6: using Hadi for weather forecast in an indirect natural language. I was this phrasing will confuse the LLM or not, but Hadi got it."},{imagePath: "/screenshots/hadi-chatbot/Screenshot (62).png",caption: "A screenshot from LangSmith to show information about the prompt runs and outputs, including the latency. I feel a bit sorry about my laptop to run this project locally."},],
+
+    github: "https://github.com/Sherif-Sakran/weather-chatbot",
+    live: "",
+    report: ""
+  },
+  {
     id: "text-as-data",
     title: "Museuem Record Classification",
-    type: " Individual Project",
+    type: "Individual Project",
     description: "A text classification project that fine-tunes four transformer-based models on textual records of five museums.",
     image: "/screenshots/text-as-data/5 best.png",
     tech: ["Spacy", "HugginFace"], 
