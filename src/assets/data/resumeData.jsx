@@ -8,13 +8,13 @@ export const resumeSections = [
                     regular: "MSc in Computing Science"
                 },
                 date: {
-                    start: "Sept 2024",
+                    start: "Sep 2024",
                     end: "Aug 2025"
                 },
                 points: [
                     "Cumulative GPA: A4",
-                    "Research Interests: Natural Language Processing (NLP) and Human-Computer Interaction (HCI)",
-                    "Awarded the African Excellence full scholarship award (Acceptance rate: 1-1.5\%",
+                    "Research interests: Natural Language Processing (NLP) and Human-Computer Interaction (HCI)",
+                    "Awarded the African Excellence full scholarship (Acceptance rate: 1-1.5\%)",
                     "Coursework includes: Machine Learning and AI, Deep Learning, Text-as-Data, Data Science and Systems,  HCI Design and Evaluation, Mobile HCI, Information Visualisation, and Conversational Interfaces (audited)."
                 ]
             },
@@ -24,12 +24,12 @@ export const resumeSections = [
                     regular: "BSc in Computer Engineering"
                 },
                 date: {
-                    start: "Sept 2019",
+                    start: "Sep 2019",
                     end: "June 2024"
                 },
                 points: [
                     "GPA: 3.845/4.0 (Highest Honors)",
-                    "Double Minor in Mathematics and Business Administration",
+                    "Double minor: Mathematics, Business Administration",
                     "Coursework includes: Fundamentals of Computing (I & II), Analysis and Design of Algorithms, Programming Languages, Computer Organisation and Assembly, Computer Architecture, Operating Systems, Database Systems, Embedded Systems, Distributed Systems, and Digital Design (I and II)"
                 ]
             },
@@ -39,7 +39,7 @@ export const resumeSections = [
                     regular: "Study Abroad Semester"
                 },
                 date: {
-                    start: "Sept 2022",
+                    start: "Sep 2022",
                     end: "Jan 2023"
                 },
                 points: [
@@ -53,7 +53,7 @@ export const resumeSections = [
         sectionBlocks: [
             {
                 title: {
-                    bold: "Reserach Intern in Deep Learning",
+                    bold: "Reserach Intern (Deep Learning)",
                     regular: "AUC and Osaka University – online"
                 },
                 date: {
@@ -61,9 +61,9 @@ export const resumeSections = [
                     end: "Aug 2023"
                 },
                 points: [
-                    "Researched and presented state-of-the-art models for indoor location tracking",
-                    "Implemented a building-independent floor predictor and improved its performance in cross-building testing by up to 25% through hyperparameters fine-tuning and modifying the visual representation of the input data",
-                    "Leveraged explainable AI (SHAP and LIME) to interpret indoor location predictions made by CNNs and XGBoost"
+                    "Researched and presented state-of-the-art models for indoor location tracking.",
+                    "Implemented a building-independent floor predictor; improved cross-building performance by up to 25% via hyperparameter tuning and improved input representations.",
+                    "Leveraged explainable AI (SHAP, LIME) to interpret indoor location predictions from CNNs and XGBoost."
                 ]
             },
             {
@@ -76,9 +76,9 @@ export const resumeSections = [
                     end: "May 2023"
                 },
                 points: [
-                    "Held hidden labs to implement OOP concepts sorting algorithms",
-                    "Provided office hours to explain concepts to students and answer their questions",
-                    "Assisted students with understanding their coursework and project requirements"
+                    "Taught supplemental labs implementing OOP concepts and sorting algorithms.",
+                    "Held office hours to explain concepts and answer student questions.",
+                    "Assisted students with coursework and project requirements."
                 ]
             },
             {
@@ -91,9 +91,9 @@ export const resumeSections = [
                     end: "Aug 2022"
                 },
                 points: [
-                    "Used Jenkins to automate jobs on multiple machines by writing Bash and Python scripts",
-                    "Implemented git hooks to automate certain tasks at pre-push using Bash and Python",
-                    "Achieved 16% speedup for a testing tool through synchronisation",
+                    "Automated multi-machine Jenkins jobs with Bash and Python scripts.",
+                    "Implemented Git pre-push hooks to automate checks and tasks.",
+                    "Achieved 16% speed-up for an internal testing tool through synchronisation improvements.",
                 ]
             },
             {
@@ -106,9 +106,9 @@ export const resumeSections = [
                     end: "July 2022"
                 },
                 points: [
-                    "Worked on a face recognition system to digitise the library’s assets",
-                    "Utilised the few-shot learning approach to train and recognise faces in a GUI tool developed in Python",
-                    "(Project was presented as a library tool and shared with librarians at the MELA virtual conference (2022))"
+                    "Developed a face recognition system to digitise and catalog library assets.",
+                    "Utilised few-shot learning to enable accurate face training and recognition within a custom GUI tool.",
+                    "The project was showcased at the 2022 MELA Conference as a library tool."
                 ]
             },
             {
@@ -121,9 +121,9 @@ export const resumeSections = [
                     end: "Dec 2020"
                 },
                 points: [
-                    "Held sessions to explain fundamentals of programming, including numbering systems and data structures",
-                    "Provided office hours to explain concepts to students and answer their questions",
-                    "Prepared and explained exam review notes for students"
+                    "Taught programming fundamentals (number systems, data structures).",
+                    "Held office hours to explain concepts and answer student questions.",
+                    "Prepared exam review notes for students."
                 ]
             },
         ]
@@ -141,10 +141,10 @@ export const resumeSections = [
                     end: ""
                 },
                 points: [
-                    "Developed a natural language dialogue system that extracts location/date from user queries and returns real-time weather forecasts.",
-                    "Integrated LangChain with a locally run LLaMA 3.2 model via Ollama to manage conversation flow and external API interactions.",
+                    "Developed an NL dialogue system that recognises intent and extracts location/date from user queries.",
+                    "Integrated LangChain with a locally run LLaMA 3.2 via Ollama to manage conversation flow and external API calls for real-time weather forecasts.",
                     "Built an interactive front end using Streamlit, with OpenStreetMap for geocoding and WeatherAPI for forecast data.",
-                    "Tools Used: LangChain, Ollama, LLaMA 3.2, Streamlit, WeatherAPI, OpenStreetMap"
+                    "Tech: LangChain, Ollama, LLaMA 3.2, Streamlit, WeatherAPI, OpenStreetMap."
                 ]
             },
             {
@@ -157,9 +157,9 @@ export const resumeSections = [
                     end: ""
                 },
                 points: [
-                    "Developed a multi-class text classification model using four transformer-based architectures.",
-                    "Implemented data preprocessing techniques, including , tokenization, custom label mapping, and data collators.",
-                    "Tools Used: Hugging Face’s transformers and Trainer API"
+                    "Developed a multi-class text classifier across four transformer-based architectures.",
+                    "Implemented preprocessing: tokenisation, custom label mapping, and data collators.",
+                    "Tech: Hugging Face Transformers, Trainer API."
                 ]
             },
             {
@@ -172,9 +172,9 @@ export const resumeSections = [
                     end: ""
                 },
                 points: [
-                    "Designed the database schema and developed the backend of the system to provide all the required APIs",
-                    "Developing the front end of the system",
-                    "Tools Used: Django, PostgreSQL, Postman, and React JS"
+                    "Designed the database schema and developed backend APIs for core functionality.",
+                    "Developed the React frontend pages of the system for the users and coordinators.",
+                    "Tech: Django, PostgreSQL, Postman, React."
                 ]
             },
             {
@@ -187,10 +187,10 @@ export const resumeSections = [
                     end: ""
                 },
                 points: [
-                    "Reviewed state-of-the-art speaker identification approaches and datasets",
-                    "Conducted a comparative evaluation between speaker-specific feature extraction techniques, levels of audio signal processing, and generative and discriminative machine learning models, including GMM, CNN, and SVM",
-                    "Developed a real-time speaker identification desktop application and an audio dataset processing toolkit",
-                    "Tools Used: Tensorflow, SciKit learn",
+                    "Reviewed state-of-the-art speaker identification approaches and datasets.",
+                    "Evaluated speaker identification performance across various feature extraction methods (spectrograms, MFCCs, pretrained model embeddings) and machine learning models (GMM, CNN, SVM).",
+                    "Built a real-time desktop application for speaker identification and an audio dataset processing toolkit.",
+                    "Tech: TensorFlow, scikit-learn.",
                 ]
             },
             {
@@ -203,9 +203,9 @@ export const resumeSections = [
                     end: ""
                 },
                 points: [
-                    "Implemented a building- and access point-independent floor predictor and used XAI for prediction explanations.",
-                    "Processed and augmented public WIFI and AP datasets to build a new dataset for the virtual building approach.",
-                    "Tools Used: TensorFlow, SciKit learn, OpenCV"
+                    "Implemented a building- and access point-independent floor predictor and used XAI to explain predictions.",
+                    "Processed and augmented public Wi-Fi/AP datasets to build a new dataset for the virtual-building approach.",
+                    "Tech: TensorFlow, scikit-learn, OpenCV."
                 ]
             },
             {
@@ -218,9 +218,9 @@ export const resumeSections = [
                     end: ""
                 },
                 points: [
-                    "Developed a desktop GUI application that tags persons, recognises faces, and constructs metadata for photos.",
+                    "Built a desktop GUI application to tag persons, recognise faces, and construct photo metadata.",
                     "Designed a test suite and performed black- and white-box testing for recognition and metadata construction.",
-                    "Tools Used: Tkinter (Python GUI Package)"
+                    "Tech: Tkinter (Python GUI package)."
                 ]
             },
         ]
@@ -230,7 +230,7 @@ export const resumeSections = [
         sectionBlocks: [
             {
                 title: {
-                    bold: "Languages: C++, C, Python, Java, R, SQL, Verilog",
+                    bold: "Languages: C/C++, Python, Java, R, SQL, Verilog",
                     regular: ""
                 },
                 date: {
@@ -242,7 +242,7 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "Data Science: Pandas, NumPy, PyTorch, Hugging Face, TensorFlow, SciKit learn, OpenCV",
+                    bold: "Data/ML: Pandas, NumPy, PyTorch, Hugging Face Transformers, TensorFlow, scikit-learn, OpenCV",
                     regular: ""
                 },
                 date: {
@@ -254,7 +254,7 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "Back-End: Django, PosgreSQL",
+                    bold: "Back end: Django, PostgreSQL",
                     regular: ""
                 },
                 date: {
@@ -266,7 +266,7 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "Front-End: HTML, CSS, JavaScript, React JS",
+                    bold: "Front end: HTML, CSS, JavaScript, React",
                     regular: ""
                 },
                 date: {
@@ -291,16 +291,16 @@ export const resumeSections = [
                     end: "June 2024"
                 },
                 points: [
-                    "Led a team of 14 heads and directors to reshape Resala’s image",
-                    "Partnered with Shabab El-Geel NGO in El-Deweiqa to re-establish Resala’s main mandate",
-                    "Connected Resala AUC with Resala NGO and secured a donations account for Resala AUC",
-                    "Organised and led a Ramadan packs event and prepared 600 packs for families in need",
-                    "Led a fundraising campaign of 51K LE through nine partnerships and 25K LE donations",
-                    "Hosted a blood drive on campus and obtained 96 blood donation bags",
-                    "Collaborated with a scouting team on a trip to entertain members and promote our Orphans Day",
-                    "Organised an Orphans Day and distributed food, clothes, and toys for 36 children",
-                    "Coordinated external visits to Resala NGO for assistance with medical supplies",
-                    "Developed Resala’s website to showcase our achievements and attract volunteers",
+                    "Led a team of 14 heads/directors to reshape the organisation’s image and partnerships.",
+                    "Partnered with Shabab El-Geel NGO (El-Deweiqa) to re-establish core mandate.",
+                    "Connected Resala AUC with Resala NGO and opened a donations account for Resala AUC.",
+                    "Organised and led a Ramadan packs event and prepared 600 packs for families in need.",
+                    "Led fundraising totaling 76k LE through nine partnerships and 25k LE in donations.",
+                    "Hosted a blood drive on campus and collected 96 blood donation bags.",
+                    "Collaborated with a scouting team on a trip to entertain members and promote our Orphans Day.",
+                    "Organised an Orphans Day and distributed food, clothes, and toys for 36 children.",
+                    "Coordinated external visits to Resala NGO for medical-supplies assistance.",
+                    "Developed Resala’s website to showcase activities and attract volunteers.",
                 ]
             },
             {
@@ -409,7 +409,7 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "First Place in the I Am an Explorer students competition, Fayoum - April 2018",
+                    bold: "First Place in the \"I Am an Explorer\" Students Competition, Fayoum - April 2018",
                     regular: ""
                 },
                 date: {
