@@ -61,9 +61,9 @@ export const resumeSections = [
                     end: "Aug 2023"
                 },
                 points: [
-                    "Researched and presented state-of-the-art models for indoor location tracking.",
-                    "Implemented a building-independent floor predictor; improved cross-building performance by up to 25% via hyperparameter tuning and improved input representations.",
-                    "Leveraged explainable AI (SHAP, LIME) to interpret indoor location predictions from CNNs and XGBoost."
+                    "Boosted cross‑building floor prediction accuracy by up to 25% through hyperparameter tuning and enhanced input representations.",
+                    "Leveraged explainable AI (SHAP, LIME) to interpret indoor location predictions from CNNs and XGBoost.",
+                    "Delivered research presentations on state‑of‑the‑art indoor localization models."
                 ]
             },
             {
@@ -108,7 +108,7 @@ export const resumeSections = [
                 points: [
                     "Developed a face recognition system to digitise and catalog library assets.",
                     "Utilised few-shot learning to enable accurate face training and recognition within a custom GUI tool.",
-                    "The project was showcased at the 2022 MELA Conference as a library tool."
+                    "The project was showcased and shared with librarians at the 2022 MELA Conference as a library tool."
                 ]
             },
             {
