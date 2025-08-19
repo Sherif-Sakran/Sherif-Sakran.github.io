@@ -133,6 +133,22 @@ export const resumeSections = [
         sectionBlocks: [
             {
                 title: {
+                    bold: "Speech Is All You Need – MSc Dissertation (in progress)",
+                    regular: ""
+                },
+                date: {
+                    start: "",
+                    end: ""
+                },
+                points: [
+                    "Exploring cross-modal transfer learning by adapting speech foundation models (SFMs) to physiological signals.",
+                    "Evaluating the performance of SFM-based physiological signal representations on stress recognition tasks compared to statistical and handcrafted features.",
+                    "Implemented transfer learning pipelines integrating multimodal datasets (e.g., speech and electrodermal activity), leveraging foundation models and dimensionality reduction techniques.",
+                    "Tech: Hugging Face Transformers, sci-kit learn."
+                ]
+            },
+            {
+                title: {
                     bold: "Hadi - The Weather Chatbot, UofG Coursework",
                     regular: ""
                 },
