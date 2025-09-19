@@ -12,7 +12,7 @@ export const projects = [
   
     galleryData:[{imagePath: "/screenshots/safa-chatbot/Screenshot (74).png",caption: "Full Dialogue - Screen 1"},{imagePath: "/screenshots/safa-chatbot/Screenshot (75).png", caption: "Full Dialogue - Screen 2"},{imagePath: "/screenshots/safa-chatbot/Screenshot (76).png",caption: "Full Dialogue - Screen 3"},{imagePath: "/screenshots/safa-chatbot/Screenshot (77).png",caption: 'Full Dialogue - Screen 4"'},{imagePath: "/screenshots/safa-chatbot/Screenshot (78).png",caption: "Full Dialogue - Screen 5"},{imagePath: "/screenshots/safa-chatbot/Screenshot (79).png",caption: "Full Dialogue - Screen 6"},{imagePath: "/screenshots/safa-chatbot/Screenshot (81).png",caption: "Full Dialogue - Screen 7"},{imagePath: "/screenshots/safa-chatbot/Screenshot (82).png",caption: "Full Dialogue - Screen 8"},{imagePath: "/screenshots/safa-chatbot/Screenshot (83).png",caption: "Full Dialogue - Screen 9"},],
 
-    github: "https://github.com/Sherif-Sakran/weather-chatbot",
+    github: "https://github.com/Sherif-Sakran/well-being-assistant",
     live: "",
     report: ""
   },
