@@ -13,7 +13,7 @@ export const resumeSections = [
                 },
                 points: [
                     "Cumulative GPA: A3",
-                    "Research interests: Natural Language Processing (NLP) and Human-Computer Interaction (HCI)",
+                    "Research interests: Affective Computing, Human-Computer Interaction (HCI), and Natural Language Processing (NLP).",
                     "Awarded the African Excellence full scholarship (Acceptance rate: 1-1.5\%)",
                     "Coursework includes: Machine Learning and AI, Deep Learning, Text-as-Data, Data Science and Systems,  HCI Design and Evaluation, Mobile HCI, Information Visualisation, and Conversational Interfaces (audited)."
                 ]
@@ -30,6 +30,7 @@ export const resumeSections = [
                 points: [
                     "GPA: 3.845/4.0 (Highest Honors)",
                     "Double minor: Mathematics, Business Administration",
+                    "Awarded the Empower full merit-based scholarship",
                     "Coursework includes: Fundamentals of Computing (I & II), Analysis and Design of Algorithms, Programming Languages, Computer Organisation and Assembly, Computer Architecture, Operating Systems, Database Systems, Embedded Systems, Distributed Systems, and Digital Design (I and II)"
                 ]
             },
@@ -44,6 +45,7 @@ export const resumeSections = [
                 },
                 points: [
                     "Coursework: Human-Computer Interaction, Computer Networks, Software Testing, and Bioinformatics",
+                    "Awarded the Erasmus+ Scholarship for Study Abroad",
                 ]
             },
         ]
@@ -53,7 +55,28 @@ export const resumeSections = [
         sectionBlocks: [
             {
                 title: {
-                    bold: "Reserach Intern (Deep Learning)",
+                    bold: "Engineering Graduate Trainee (Data Science & AI)",
+                    regular: "Property Finder – Dubai, UAE"
+                },
+                date: {
+                    start: "Nov 2025",
+                    end: "Current"
+                },
+                points: [
+                    "Built a scalable SQL-based recommender system using collaborative filtering on millions of user interactions to enhance property listing discovery.",
+                    "Developed a listing price prediction model using LightGBM, improving the current state performance significantly (MAPE: 20.6% to 10.9%, MDAPE: 0.10% to 0.06%, R2: 85% to 93%, coverage: 88.3% to 95.8%).",
+                    "Evaluated anomaly detection techniques (IQR, DBSCAN, and Isolation Forest) to identify pricing irregularities across communities and neighbourhoods.",
+                    " Evaluated anomaly detection techniques (IQR, DBSCAN, and Isolation Forest) to identify pricing irregularities across communities and neighbourhoods.",
+                    "Developed a statistical outlier detection model (price, size, price-to-size), achieving 97\% precision that conservatively flags 0.6\% of online listings.",
+                    "Deployed a price and size validation system on SageMaker that blocks unrealistic listings and introduced a feedback loop to incorporate false positives into model computations, improving its robustness across segments.",
+                    "Built a validation pipeline that monitors model performance and blocks deployment in case of model quality drift from the specified threshold.",
+                    "Scaling the price and size realism system from the UAE to Qatar and Bahrain."
+
+                ]
+            },
+            {
+                title: {
+                    bold: "Research Intern (Deep Learning)",
                     regular: "AUC and Osaka University – online"
                 },
                 date: {
@@ -61,9 +84,9 @@ export const resumeSections = [
                     end: "Aug 2023"
                 },
                 points: [
-                    "Boosted cross‑building floor prediction accuracy by up to 25% through hyperparameter tuning and enhanced input representations.",
+                    "Researched and delivered presentations on state‑of‑the‑art indoor localisation models.",
                     "Leveraged explainable AI (SHAP, LIME) to interpret indoor location predictions from CNNs and XGBoost.",
-                    "Delivered research presentations on state‑of‑the‑art indoor localization models."
+                    "Boosted cross‑building floor prediction accuracy of StoryTeller by up to 25\% through hyperparameter tuning and enhanced input representations."
                 ]
             },
             {
@@ -133,7 +156,7 @@ export const resumeSections = [
         sectionBlocks: [
             {
                 title: {
-                    bold: "Speech Is All You Need – MSc Dissertation (in progress)",
+                    bold: "Speech Is All You Need – MSc Dissertation",
                     regular: ""
                 },
                 date: {
@@ -141,10 +164,42 @@ export const resumeSections = [
                     end: ""
                 },
                 points: [
-                    "Exploring cross-modal transfer learning by adapting speech foundation models (SFMs) to physiological signals.",
-                    "Evaluating the performance of SFM-based physiological signal representations on stress recognition tasks compared to statistical and handcrafted features.",
+                    "Investigated cross-modal transfer learning by adapting the XLSR speech foundation model to interpret physiological signals for stress recognition.",
+                    "Evaluated XLSR-based physiological signal embeddings against handcrafted statistical features, demonstrating the efficacy of speech pre-trained models in non-audio domains.",
                     "Implemented transfer learning pipelines integrating multimodal datasets (e.g., speech and electrodermal activity), leveraging foundation models and dimensionality reduction techniques.",
-                    "Tech: Hugging Face Transformers, sci-kit learn."
+                    "Tech: Hugging Face Transformers, scikit-learn."
+                ]
+            },
+            {
+                title: {
+                    bold: "Quantitative Energy Trading Pipeline \& Live Inference Endpoint",
+                    regular: ""
+                },
+                date: {
+                    start: "",
+                    end: ""
+                },
+                points: [
+                    "Developed a robust data pipeline harvesting physical grid drivers from the ENTSO-E and Open-Meteo APIs, incorporating automated schema validation and QA checks using Pydantic.",
+                    "Optimised dual LightGBM architectures using Optuna; applied early stopping and strict chronological splitting to eliminate out-of-sample data leakage, and reduced baseline MAE by 46\%.",
+                    "Containerised the pipeline using Docker with FastAPI and GitHub Actions CI/CD and built an automated LLM diagnostic tool via the Gemini API to analyse prediction anomalies during extreme market events.",
+                    "Tech: FastAPI, Docker, Gemini API, GitHub Actions, HF Spaces, HF Hub, Pydantic, LightGBM, Optuna."
+                ]
+            },
+            {
+                title: {
+                    bold: "Safa - The Well-Being Assistant",
+                    regular: ""
+                },
+                date: {
+                    start: "",
+                    end: ""
+                },
+                points: [
+                    "Engineered an end-to-end empathetic dialogue system leveraging LangChain and a locally deployed Llama 3 model fine-tuned via Unsloth to provide contextual emotional support.",
+                    "Curated and structured a custom synthetic dataset of 100+ multi-turn dialogues across 8 distinct affective states (e.g., stress, loneliness) and self-alignment profiles to guide model persona and guardrails.",
+                    "Implemented a Retrieval-Augmented Generation (RAG) pipeline utilising ChromaDB to dynamically inject psychoeducational concepts and meditation scripts based on user intent.",
+                    "Tech: Unsloth, ChromaDB, LangChain, Ollama, Streamlit."
                 ]
             },
             {
@@ -246,7 +301,7 @@ export const resumeSections = [
         sectionBlocks: [
             {
                 title: {
-                    bold: "Languages: C/C++, Python, Java, R, SQL, Verilog",
+                    bold: "Languages: Python, SQL, C++",
                     regular: ""
                 },
                 date: {
@@ -258,7 +313,7 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "Data/ML: Pandas, NumPy, PyTorch, Hugging Face Transformers, TensorFlow, scikit-learn, OpenCV",
+                    bold: "Data Science \& Analytics: Pandas, NumPy, Matplotlib, Scikit‑learn",
                     regular: ""
                 },
                 date: {
@@ -270,7 +325,7 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "Back end: Django, PostgreSQL",
+                    bold: "Machine Learning \& Gen AI: PyTorch, Hugging Face Transformers, LangChain, Ollama",
                     regular: ""
                 },
                 date: {
@@ -282,7 +337,19 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "Front end: HTML, CSS, JavaScript, React",
+                    bold: "MLOps: Git, Docker, GitHub Actions, FastAPI, Hugging Face Spaces, Hugging Face Hub",
+                    regular: ""
+                },
+                date: {
+                    start: "",
+                    end: ""
+                },
+                points: [
+                ]
+            },
+            {
+                title: {
+                    bold: "AWS: RedShift, S3, SageMaker AI, ECR, CloudWatch",
                     regular: ""
                 },
                 date: {
