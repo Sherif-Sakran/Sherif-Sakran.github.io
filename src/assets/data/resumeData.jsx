@@ -64,13 +64,15 @@ export const resumeSections = [
                 },
                 points: [
                     "Built a scalable SQL-based recommender system using collaborative filtering on millions of user interactions to enhance property listing discovery.",
-                    "Developed a listing price prediction model using LightGBM, improving the current state performance significantly (MAPE: 20.6% to 10.9%, MDAPE: 0.10% to 0.06%, R2: 85% to 93%, coverage: 88.3% to 95.8%).",
+                    "Developed a listing price prediction model using LightGBM, improving the current state performance significantly (MAPE: 20.6% to 10.9%, MDAPE: 10% to 6%, R2: 85% to 93%, coverage: 88.3% to 95.8%).",
                     "Evaluated anomaly detection techniques (IQR, DBSCAN, and Isolation Forest) to identify pricing irregularities across communities and neighbourhoods.",
-                    " Evaluated anomaly detection techniques (IQR, DBSCAN, and Isolation Forest) to identify pricing irregularities across communities and neighbourhoods.",
-                    "Developed a statistical outlier detection model (price, size, price-to-size), achieving 97\% precision that conservatively flags 0.6\% of online listings.",
-                    "Deployed a price and size validation system on SageMaker that blocks unrealistic listings and introduced a feedback loop to incorporate false positives into model computations, improving its robustness across segments.",
-                    "Built a validation pipeline that monitors model performance and blocks deployment in case of model quality drift from the specified threshold.",
-                    "Scaling the price and size realism system from the UAE to Qatar and Bahrain."
+                    " Developed a statistical outlier detection model (price, size, price-to-size), achieving 97\% precision that conservatively flags 0.6\% of online UAE listings.",
+                    "Scaled the UAE price and size realism system to Qatar and Bahrain to flag 1.4\% and 1.5\% listings, respectively.",
+                    "Deployed the price and size realism system on a SageMaker endpoint served with FastAPI to block agents from publishing unrealistic listings on the platform.",
+                    "Introduced a feedback loop to incorporate reported false positives into model computations, improving its robustness across segments, and to bypass the system for the approved listings.",
+                    "Built a validation pipeline that assesses the agreement score of new model releases trained on new data against a baseline isolation forest model to block new releases in case of score drifts from the specified thresholds.",
+                    "Implemented a dashboard with Evidently AI to monitor data and model performance drift across releases.",
+                    "Built a complete pipeline from data retrieval, pre-processing, and modeling to validation, deployment, and monitoring that re-trains and deploys weekly as a Fargate task."
 
                 ]
             },
@@ -337,7 +339,7 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "MLOps: Git, Docker, GitHub Actions, FastAPI, Hugging Face Spaces, Hugging Face Hub",
+                    bold: "MLOps: Git, Docker, GitHub Actions, FastAPI, Hugging Face Spaces, Hugging Face Hub, Evidently AI",
                     regular: ""
                 },
                 date: {
@@ -349,7 +351,7 @@ export const resumeSections = [
             },
             {
                 title: {
-                    bold: "AWS: RedShift, S3, SageMaker AI, ECR, CloudWatch",
+                    bold: "AWS: RedShift, S3, SageMaker AI, ECR, ECS, CloudWatch",
                     regular: ""
                 },
                 date: {
