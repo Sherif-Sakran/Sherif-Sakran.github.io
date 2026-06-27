@@ -4,17 +4,28 @@ import { projects } from '../assets/data/projectsData';
 import '../css/Project.css';
 import useEmblaCarousel from 'embla-carousel-react';
 
-// --- SUB-COMPONENT: Isolates the Carousel Logic ---
-// By extracting this, we can force it to fully unmount and remount when the project changes.
+// --- LIGHTBOX IMPORTS ---
+import Lightbox from "yet-another-react-lightbox";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import Counter from "yet-another-react-lightbox/plugins/counter";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/captions.css";
+import "yet-another-react-lightbox/plugins/counter.css";
+
+// --- SUB-COMPONENT: Isolates the Carousel & Lightbox Logic ---
 const ProjectCarousel = ({ galleryData, projectId }) => {
-  // 1. Read memory SYNCHRONOUSLY on mount
+  // 1. Embla State (Reads memory SYNCHRONOUSLY on mount)
   const [initialIndex] = useState(() => {
     return parseInt(sessionStorage.getItem(`carousel-${projectId}`)) || 0;
   });
   
   const [selectedIndex, setSelectedIndex] = useState(initialIndex);
+  
+  // 2. Lightbox State
+  const [lightboxIndex, setLightboxIndex] = useState(-1);
 
-  // 2. Pass the saved index directly into Embla's starting configuration
+  // 3. Embla Initialization
   const [mainViewportRef, emblaMainApi] = useEmblaCarousel({ 
     loop: false, 
     startIndex: initialIndex 
@@ -26,6 +37,7 @@ const ProjectCarousel = ({ galleryData, projectId }) => {
     startIndex: initialIndex
   });
 
+  // Navigation Handlers
   const scrollPrev = useCallback(() => {
     if (emblaMainApi) emblaMainApi.scrollPrev();
   }, [emblaMainApi]);
@@ -34,16 +46,19 @@ const ProjectCarousel = ({ galleryData, projectId }) => {
     if (emblaMainApi) emblaMainApi.scrollNext();
   }, [emblaMainApi]);
 
-  // Keyboard Navigation
+  // Keyboard Navigation for Embla
   useEffect(() => {
     const handleKeyDown = (e) => {
+      // Prevent Embla from stealing arrow keys when Lightbox is open
+      if (lightboxIndex >= 0) return; 
+      
       if (e.key === 'ArrowLeft') scrollPrev();
       if (e.key === 'ArrowRight') scrollNext();
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [scrollPrev, scrollNext]);
+  }, [scrollPrev, scrollNext, lightboxIndex]);
 
   const onThumbClick = useCallback((index) => {
     if (!emblaMainApi || !emblaThumbsApi) return;
@@ -61,7 +76,7 @@ const ProjectCarousel = ({ galleryData, projectId }) => {
     sessionStorage.setItem(`carousel-${projectId}`, current.toString());
   }, [emblaMainApi, emblaThumbsApi, projectId]);
 
-  // The Listener
+  // The Embla Listener
   useEffect(() => {
     if (!emblaMainApi) return;
     
@@ -76,14 +91,19 @@ const ProjectCarousel = ({ galleryData, projectId }) => {
     <div className="presentation-gallery">
       <h3>Project Gallery</h3>
 
-      {/* MAIN CAROUSEL */}
+      {/* --- 1. MAIN CAROUSEL --- */}
       <div className="embla-main">
         <div className="embla__viewport" ref={mainViewportRef}>
           <div className="embla__container">
             {galleryData.map((screenshot, idx) => (
               <div className="embla__slide" key={idx}>
                 <div className="embla__slide__inner">
-                  <img src={screenshot.imagePath} alt={screenshot.caption} />
+                  <img 
+                    src={screenshot.imagePath} 
+                    alt={screenshot.caption} 
+                    onClick={() => setLightboxIndex(idx)}
+                    style={{ cursor: 'zoom-in' }}
+                  />
                 </div>
                 <div className="embla__caption">{screenshot.caption}</div>
               </div>
@@ -99,7 +119,7 @@ const ProjectCarousel = ({ galleryData, projectId }) => {
         </button>
       </div>
 
-      {/* THUMBNAIL TRACK */}
+      {/* --- 2. THUMBNAIL TRACK --- */}
       <div className="embla-thumbs">
         <div className="embla-thumbs__viewport" ref={thumbViewportRef}>
           <div className="embla-thumbs__container">
@@ -120,6 +140,24 @@ const ProjectCarousel = ({ galleryData, projectId }) => {
           </div>
         </div>
       </div>
+
+      {/* --- 3. THE FULL-SCREEN LIGHTBOX --- */}
+      <Lightbox
+        open={lightboxIndex >= 0}
+        index={lightboxIndex}
+        close={() => setLightboxIndex(-1)}
+        slides={galleryData.map((item) => ({
+          src: item.imagePath,
+          description: item.caption,
+        }))}
+        // ADD ZOOM HERE
+        plugins={[Captions, Counter, Zoom]} 
+        
+        controller={{ 
+          closeOnPullDown: true, 
+          closeOnPullUp: true 
+        }}
+      />
     </div>
   );
 };
@@ -166,10 +204,7 @@ const Project = () => {
         <p><a href={project.report} target="_blank" rel="noreferrer">Report</a></p>
       )}
 
-      {/* THE FIX: Using the `key` prop forces React to completely destroy and 
-        rebuild the carousel component whenever the project ID changes. 
-        This eliminates state contamination entirely!
-      */}
+      {/* Renders the isolated Carousel/Lightbox component */}
       {project.galleryData && project.galleryData.length !== 0 && (
         <ProjectCarousel 
           key={project.id} 

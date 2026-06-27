@@ -234,3 +234,8 @@ a:hover {
   
   .embla-thumbs__slide { flex: 0 0 25%; }
 }
+
+.yarl__slide_description {
+  text-align: center !important;
+  margin: 0 auto !important;
+}
